@@ -1,0 +1,20 @@
+spring:
+        datasource:
+                url: jdbc:postgresql://127.0.0.1:5432/product_db
+                username: postgres
+                password: 1234
+                driver-class-name: org.postgresql.Driver
+
+        jpa:
+                hibernate:
+                        ddl-auto: update
+                show-sql: true
+                properties:
+                        hibernate:
+                                dialect: org.hibernate.dialect.PostgreSQLDialect
+
+        # Optional: logging SQL in debug
+logging:
+        level:
+                org.hibernate.SQL: DEBUG
+                org.hibernate.type.descriptor.sql.BasicBinder: TRACE
