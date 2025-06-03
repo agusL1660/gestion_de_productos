@@ -1,5 +1,6 @@
 package com.gestion_productos.gestion_productos_backend.models.entities;
 
+import com.gestion_productos.gestion_productos_backend.models.enums.CategoryName;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -11,7 +12,6 @@ import lombok.*;
 @Entity
 @Table(name = "categories")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class Category {
 
@@ -19,5 +19,6 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_cat;
 
-    private String name;
+    @Enumerated(EnumType.STRING)
+    private CategoryName name;
 }
