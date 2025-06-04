@@ -2,6 +2,9 @@ package com.gestion_productos.gestion_productos_backend.mappers;
 
 import com.gestion_productos.gestion_productos_backend.models.dtos.ProductDTO;
 import com.gestion_productos.gestion_productos_backend.models.entities.Product;
+import org.springframework.stereotype.Component;
+
+@Component
 
 public class ProductMapper {
 

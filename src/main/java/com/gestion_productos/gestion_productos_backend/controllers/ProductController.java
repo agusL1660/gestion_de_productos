@@ -7,7 +7,6 @@ import com.gestion_productos.gestion_productos_backend.services.ProductService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:3000")
 
 @RestController
 @RequestMapping("/products")

@@ -20,9 +20,10 @@ public class ProductService {
     private ProductMapper productMapper;
 
 
-    public ProductService(ProductRepository productRepository,CategoryRepository categoryRepository){
+    public ProductService(ProductRepository productRepository,CategoryRepository categoryRepository,ProductMapper productMapper){
         this.productRepository=productRepository;
         this.categoryRepository=categoryRepository;
+        this.productMapper=productMapper;
     }
     public List<ProductDTO> allProducts(){
 

@@ -12,6 +12,7 @@ import lombok.*;
 @Entity
 @Table(name = "categories")
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Category {
 
